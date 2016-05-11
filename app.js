@@ -21,7 +21,8 @@ var indexRoutes = require("./routes/index"),
 /*====
  ==== SETP THE DB
  ====*/
-mongoose.connect("mongodb://localhost/yelp_camp_v4");
+// mongoose.connect("mongodb://localhost/yelp_camp_v4");
+mongoose.connect("mongodb://morgansegura:SeGuRa-1980mongolabyelpcamp@ds021182.mlab.com:21182/yelpcamp");
 
 /*====
  ==== SETUP BODY PARSER
