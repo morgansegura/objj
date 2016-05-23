@@ -1,7 +1,7 @@
 {
-  "name": "yelpcamp",
+  "name": "objj",
   "version": "1.0.0",
-  "description": "YelpCamp",
+  "description": "OutlierBjj",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
