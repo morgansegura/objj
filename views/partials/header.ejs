@@ -13,20 +13,184 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
         <!-- Local CSS Files -->
         <link href="/css/style.css" rel="stylesheet" > 
+        <link href="/css/core.css" rel="stylesheet" type="text/css">         
 
         <!-- Google Fonts: Roboto by: Christian Robertson -->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+        <!-- Fav Icon -->
+        <link href="/images/brand/favicon.svg" rel="shortcut icon" type="image/x-icon">
+
+        <!-- External Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css"> 
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin" rel="stylesheet" type="text/css">  
+        <!-- External CSS -->
+        <link href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet" type="text/css">    
+        <link href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet" type="text/css">
+        <link href="lib/fancybox/dist/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css" rel="stylesheet" type="text/css"> 
+
+        <!-- External JS -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>	
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+        <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
+        <script type="text/javascript" src="lib/fancybox/dist/js/jquery.fancybox.js"></script>   
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>     
+
+        
         <!--[if lt IE 9]>
                 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
                 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->  
+        <![endif]-->      
 
     </head>
     
+<!-- Following Menu -->
+	<div class="ui fixed inverted menu">
+	  <div class="ui container">
+		<a class="item logo clearfix" href="/#!/">
+			<img class="logo" src="/images/objj-icon-new.svg">
+			<div class="logo-text-large"> Outliers <span>&reg;</span></div>
+			<p class="under-text">Brazilian Jiu Jitsu</p>
+		</a>
+
+		<a class="item" href="/#!/">Home</a>
+		<a class="item" href="/#!/classes">Classes</a>
+		<a class="item" href="/#!/instructors">Instructors</a>
+		<a class="item" href="/#!/about">About Us</a>          
+		<a class="item contact-form" href="/#!/">Contact Us</a>          
+		<a class="item" href="/#!/waiver">Waiver</a> 
+		  
+		  <div class="ui simple dropdown item mobile-on">
+			  Dropdown <i class="dropdown icon"></i>
+			<div class="menu">
+			  <a class="item" href="#">Link Item</a>
+			  <a class="item" href="#">Link Item</a>
+			  <div class="divider"></div>
+			  <div class="header">Header Item</div>
+			  <div class="item">
+				<i class="dropdown icon"></i>
+				Sub Menu
+				<div class="menu">
+				  <a class="item" href="#">Link Item</a>
+				  <a class="item" href="#">Link Item</a>
+				</div>
+			  </div>
+			  <a class="item" href="#">Link Item</a>
+			</div>
+		  </div>    
+        </div>
+    </div>
+  <div class="main ui inverted vertical masthead center aligned segment">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slick').slick({
+          centerMode: true,
+          centerPadding: '60px',
+          dots: false,
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          autoplay: true,
+          autoplaySpeed: 2000,          
+          speed: 500,
+          nextArrow: '<div class="arrow right"><i class="chevron right icon"></i></div>',
+          prevArrow: '<div class="arrow left"><i class="chevron left icon"></i></div>'
+        });
+	$("a.outliers-photos").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	}); 
+        $('.contact-form').on('click', function(){
+           $('.ui.modal').modal('show');  
+        });
+               
+    });	
+  </script>
+        <!-- Fancybox and Slick Slider -->
+        <div class="ui photo row logo-head">
+          <div class=" clearfix slick container" style="width: 100%; margin: 55px auto 0 auto;">
+              <div>
+              <a class="outliers-photos" href="modules/core/img/slider1.jpg">
+                  <img src="/images/slider1.jpg" class="ui bordered big image">
+              </a>
+                  </div>
+              <a class="outliers-photos" href="/images/slider2.jpg">
+                  <img src="/images/slider2.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider3.jpg">
+                  <img src="/images/slider3.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider4.jpg">
+                  <img src="/images/slider4.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider5.jpg">
+                  <img src="/images/slider5.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider6.jpg">
+                  <img src="/images/slider6.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider7.jpg">
+                  <img src="/images/slider7.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider8.jpg">
+                  <img src="/images/slider8.jpg" class="ui big bordered image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider9.jpg">
+                  <img src="/images/slider9.jpg" class="ui bordered big image">
+              </a>                   
+              <a class="outliers-photos" href="/images/slider10.jpg">
+                  <img src="/images/slider10.jpg" class="ui bordered big image">
+              </a>                   
+
+          </div>     
+            <!--<img class="secondary" src="/images/objj-logo-vert-light.svg">  -->
+          <div class="secondary-logo">
+
+            <h2> Built on the foundation of <span class="yellow">self</span>, <span class="yellow">family</span> and <span class="yellow">community</span>.                 
+             <span>&nbsp;&nbsp;<a href="/#!/" class="ui huge green button contact-form">Try For Free<i class="right arrow icon"></i></a></span>                 
+              </h2>
+   
+          </div>
+        </div>
+
+    </div>
+<div class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Profile Picture
+  </div>
+  <div class="image content">
+    <div class="ui medium image">
+      <img src="/images/avatar/large/chris.jpg">
+    </div>
+    <div class="description">
+      <div class="ui header">We've auto-chosen a profile image for you.</div>
+      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black deny button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+          
+          
+    <!--
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -40,7 +204,7 @@
             </a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
+
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
 			  <% if(!currentUser) { %>
@@ -50,15 +214,17 @@
 			  <li class="userclass"><a href="#">Welcome back <b><%= currentUser.username %></b></a></li>
 			  <li><a href="/logout">Logout</a></li>
 			  <% } %>
-			  <!--
+			  
             <li class="active"><a href="/campgrounds">Campgrounds <span class="sr-only">(current)</span></a></li>
             <li><a href="/campgrounds/new">Add New Campground</a></li>
-			-->
+
           </ul>
 
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+        </div>
+      </div>
     </nav>
+          -->
+          
 	<div class=container>
 		
 		<% if( error && error.length > 0 ) { %>

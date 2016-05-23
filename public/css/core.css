@@ -1,0 +1,299 @@
+/*======
+ ==== BASE STYLES
+ ======*/
+
+body {
+
+}
+
+/*======
+ ==== TYPOGRAPHY
+ ======*/
+
+a,
+a:link,
+a:visited {
+	
+}
+
+a:hover, 
+a:active {
+
+}
+
+p, h5, h6 {
+	/*font-family: 'Roboto Slab', serif;*/
+}
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+h1 {
+
+}
+
+h2 {
+	
+}
+
+h3, h4 {
+	
+}
+
+ul.main-nav {
+	
+}
+
+ul {
+	
+}
+
+li {
+	
+}
+
+.hidden {
+
+}
+/*======
+ ==== HEADER NAVIGATION
+ ======*/
+.ui.fixed.menu {
+	border-bottom: 2px solid #f2da0d;
+}
+.logo img {
+	
+}
+.logo-text-large {
+	font-size: 24px;
+	font-family: 'Arial Black', serif;
+	font-weight: bold;
+	letter-spacing: -.04em;
+	text-transform: uppercase;
+	margin-left: 5px;
+}
+.logo-text-large span {
+	font-size: 12px;
+	font-family: 'arial', serif;
+	font-weight: bold;
+	letter-spacing: -.04em;
+	text-transform: uppercase;
+	margin-left: -5px;
+}
+.under-text {
+	font-size: 14px;
+	display: block;
+	font-family: 'Arial', serif;
+	font-weight: bold;
+	text-align: right;
+	color: #333;
+	float: right;
+	display: none;
+}
+span.yellow {
+    color: #f2da0d;
+}
+
+/*======
+ ==== CONTENT
+ ======*/
+.container-padding-top {
+
+}
+
+.content {
+	/*margin-top: 50px; */
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+
+
+.home .ui.inverted.segment, .home.ui .primary.inverted.segment {
+ /*  http://uigradients.com/#  */
+}
+.slick {
+	border-bottom: 2px solid #f2da0d;    
+}
+.slick .arrow {
+    cursor: pointer;
+    background: #000;
+    position: absolute;
+    z-index: 999;
+    padding: 10px 10px 10px 10px;
+    top: 40%;
+}
+.slick .arrow:hover {
+    background: #fff;
+    color: #000;
+}
+.slick .arrow.left {
+    left: 0;
+}
+
+.slick .arrow.right {
+    right: 0;
+}
+
+.logo-head {
+    position: relative;
+}
+.secondary-logo {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    display: block;
+
+        
+        
+    width: 100%;
+    padding: 10px 0;
+}
+
+.main.masthead.segment {
+    min-height: auto;
+    padding: 0;
+    border-bottom: 2px solid #f2da0d !important;
+}
+img.secondary {
+    position: absolute;
+    max-width: 100px;
+}
+
+.google-frame {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+.offset {
+
+
+background: #E0EAFC; /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
+}
+/*======
+ ==== MAIN PAGE
+ ======*/
+	.ui.inverted.segment, 
+	.ui.primary.inverted.segment {
+		background: url('../img/bg-body-drk.jpg') 0 0 repeat;
+	}
+ .hidden.menu {
+      display: none;
+    }
+
+    .masthead.segment {
+      min-height: 450px;
+      padding: 1em 0em;
+    }
+    .masthead .logo.item img {
+      margin-right: 1em;
+    }
+    .masthead .ui.menu .ui.button {
+      margin-left: 0.5em;
+    }
+    .masthead h1.ui.header {
+      margin-top: 125px;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+      font-size: 1.7em;
+      font-weight: normal;
+    }
+
+    .ui.vertical.stripe {
+      padding: 40px 0em;
+    }
+    .ui.vertical.stripe h3 {
+      font-size: 2em;
+    }
+    .ui.vertical.stripe .button + h3,
+    .ui.vertical.stripe p + h3 {
+      margin-top: 3em;
+    }
+    .ui.vertical.stripe .floated.image {
+      clear: both;
+    }
+    .ui.vertical.stripe p {
+      font-size: 1.33em;
+    }
+    .ui.vertical.stripe .horizontal.divider {
+      margin: 3em 0em;
+    }
+
+    .quote.stripe.segment {
+      padding: 0em;
+    }
+    .quote.stripe.segment .grid .column {
+      padding-top: 5em;
+      padding-bottom: 5em;
+    }
+
+    .footer.segment {
+      padding: 5em 0em;
+    }
+
+    .secondary.pointing.menu .toc.item {
+      display: none;
+    }
+	.mobile-on {
+		display: none !important;
+	}
+	.mobile-off {
+		display: block !important;
+	}
+    @media only screen and (max-width: 700px) {
+
+	.mobile-on {
+		display: block !important;
+	}
+	.mobile-off {
+		display: none !important;
+	}	
+      .ui.fixed.menu {
+
+      }
+      .secondary.pointing.menu .item,
+      .secondary.pointing.menu .menu {
+        display: none;
+      }
+      .secondary.pointing.menu .toc.item {
+        display: block;
+      }
+      .masthead.segment {
+        min-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+      }
+    }
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
