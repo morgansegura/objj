@@ -5,10 +5,19 @@
 // *==* Document Ready *==*	
 $(document).ready(function(){
 	
+	// *==* Modal for Contact popup *==*	
+	$('.contact-form').on('click', function(){
+	   $('.ui.modal').modal('show');  
+	});
+	
+	// *==* Sidebar Nav *==*
+	$('.hamburger').on('click', function(){
+		$('.ui.sidebar').sidebar('toggle');
+	});
+	
 	// *==* Slick Carousel *==*	
   $('.slick').slick({
-	  centerMode: true,
-	  centerPadding: '60px',
+
 	  dots: false,
 	  infinite: true,
 	  slidesToShow: 4,
@@ -16,8 +25,8 @@ $(document).ready(function(){
 	  autoplay: true,
 	  autoplaySpeed: 5000,          
 	  speed: 500,
-	  nextArrow: '<div class="arrow right"><i class="chevron right icon"></i></div>',
-	  prevArrow: '<div class="arrow left"><i class="chevron left icon"></i></div>',
+	  nextArrow: '<div class="arrow right transition"><i class="chevron right icon"></i></div>',
+	  prevArrow: '<div class="arrow left transition"><i class="chevron left icon"></i></div>',
 		responsive: [
 		{
 		  breakpoint: 768,
@@ -50,12 +59,5 @@ $(document).ready(function(){
 		'speedOut'		:	200, 
 		'overlayShow'	:	false
 	});
-	// *==* Modal for Contact popup *==*	
-	$('.contact-form').on('click', function(){
-	   $('.ui.modal').modal('show');  
-	});
-	// *==* Sidebar Nav *==*
-	$('.hamburger').on('click', function(){
-		$('.ui.sidebar').sidebar('toggle');
-	});
+
 });	

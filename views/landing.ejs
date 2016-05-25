@@ -6,32 +6,75 @@
 	<%# Main container %>
 	<div class="ui stackable grid container">
 		<%# Column left: About us %>
-		<div class="ui twelve wide column">
-			<div class="ui padded basic segment">
+		<div class="ui twelve wide column with-sidebar">
+			<div class="ui basic segment">
+				<div class="show-mobile">
+					<h2 class="whitish-text"><i class="phone square icon"></i> Call Now! <a class="orange-text" href="tel:1-408-555-5555">1-408-555-5555</a></h2>     
+					<iframe class="google-frame"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10251+Mast+Blvd+Santee,+Ca&amp;aq=&amp;sll=37.230328,-95.712891&amp;sspn=62.606855,114.521484&amp;ie=UTF8&amp;hq=&amp;hnear=10251+Mast+Blvd,+Santee,+California+92071&amp;ll=32.858032,-116.97813&amp;spn=0.01442,0.025749&amp;z=14&amp;output=embed"></iframe>	
+				</div>				
 				<div class="ui stackable grid">
-					<div class="ui two wide column">
-						<img class="ui big image" src="/images/brand/ribeiro-star.svg" >
+					<div class="hide-mobile ui two wide column">
+						<img class="ui small image" src="/images/brand/ribeiro-star-yellow.svg" >
 					</div>
 					<div class="ui fourteen wide column">
-						<h2 class="ui right">Official school of the Ribeiro Jiu-Jitsu Association</h2>
+						<h2 class="ui headline right whitish-text">Official school of the <span class="yellow-text">Ribeiro Jiu-Jitsu Association</span></h2>
 					
 						<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>		
 
-						<a class="ui blue basic right button" href="/#!/about#outliersbjj">Learn More about Outliers Jiu-Jitsu</a>   						
+						<a class="ui orange large button full" href="/#!/about#outliersbjj">Learn More about Outliers Jiu-Jitsu</a>   						
 					</div>											
-
 				</div>
-			</div>						
+			</div>	
+			
+			<hr class="underline-dark">	
+			
+			<%# Column left: More Content %>
+			<div class="ui basic segment">
+				<h3 class="outliers-star whitish-text">We offer <span class="yellow-text">Adult and Youth classes</span> for all ages. </h3>
+				<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>					
+				<div class="ui stackable three column grid">
+					<div class="hide-mobile column">
+						<img src="/images/slider4.jpg" class="ui image" >
+					</div>
+					<div class="hide-mobile column">
+						<img src="/images/slider8.jpg" class="ui image" >
+					</div>
+					<div class="hide-mobile column">
+						<img src="/images/slider9.jpg" class="ui image" >
+					</div>			
+				</div>
+			</div>	
+			
+			<a class="ui orange basic large button full" href="/about#outliersbjj">Learn more about our Classes</a> 
+			
+			<hr class="underline-dark">	
+			
+			<%# Column left: More Content %>
+			<div class="ui basic segment">
+				<h3 class="outliers-star whitish-text"><span class="yellow-text">Professional and Caring</span> Instructors. </h3>
+				<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>					
+				<div class="ui stackable three column grid">
+					<div class="hide-mobile column">
+						<img src="/images/img-about-outliers1.jpg" class="ui image" >
+					</div>
+					<div class="hide-mobile column">
+						<img src="/images/img-about-outliers2.jpg" class="ui image" >
+					</div>
+					<div class="hide-mobile column">
+						<img src="/images/img-about-outliers3.jpg" class="ui image" >
+					</div>			
+				</div>				
+			</div>
+			<a class="ui orange basic large button full" href="/instructors">Learn more about our Instructors</a> 
 		</div>
 
-		<div class="ui items four wide column">
+		<div class="hide-mobile ui items four wide column">
 		<% include partials/sidebar %>
 		</div>
 	</div>
-
-
-	<div class="ui divider"></div>
-
+	
+	<hr class="underline-dark">
+	
 	<%# Testimonial section %>
 	<div class="ui vertical stripe quote segment">  
 		<div class="ui equal width stackable internally celled grid">

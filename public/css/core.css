@@ -3,8 +3,10 @@
  ======*/
 
 body {
-	background: url('/images/bg-tan.jpg') 0 0 repeat; 
-	font-family: roboto, sans-serif;
+	background: url('/images/bg-body.jpg') 0 0 repeat;
+	/*background: url('/images/bg-tan.jpg') 0 0 repeat; */
+    font-family: 'PT Sans Caption', roboto, Myriad, Helvetica, Arial, sans-serif;
+	font-size: 100%;
 }
 
 /*======
@@ -22,19 +24,40 @@ a:active {
 
 }
 
-p, h5, h6 {
-	/*font-family: 'Roboto Slab', serif;*/
-	color: #333;
-	font-size: 16px;
+p, h4, h5, h6 {
+    font-weight: 500;
+	color: #fff;
+}
+
+h2, h3, .nav-association, .phone-number, button.orange {
+    font-size: 1.375em;
+}
+
+p, h1, h2, h3, h4, h5, h6, a {
+    line-height: 1.7em;
 }
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans Caption', roboto, Myriad, Helvetica, Arial, sans-serif;	
+}
+.outliers-star {
+    text-indent: 37px;
+    background: transparent url('/images/icon-outliers-symbol.png') 0 6px no-repeat;
+}
+.ribeiro-star {
+    text-indent: 37px;
+    background: transparent url('/images/brand/ribeiro-star-yellow.svg') 0 -1px no-repeat;
+}
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1.375em;
+}
+h1, h2, h3, .slogan-text, .nav-association p, nav li, .secondary-nav a, .phone-number {
 
 }
-
 h1 {
-
+	
 }
-
 h2 {
 	
 }
@@ -55,8 +78,30 @@ li {
 	
 }
 
+.yellow-text {
+	color: #f3da00;
+}
+.orange-text {
+    color: #cb4504;	
+}
+.whitish-text {
+	color: #fff;
+}
+.underline-dark {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 2px;
+    display: block;
+    background: transparent url('/images/bg-spacer-line.png') center top repeat-x;
+    border: none;	
+}
 .hidden {
 
+}
+.footer {
+	background: #111;
+	border-top: 2px solid #f2da0d;
+	padding-top: 20px 0;
 }
 /*======
  ==== HEADER NAVIGATION
@@ -133,14 +178,14 @@ span.yellow {
 .home .ui.inverted.segment, .home.ui .primary.inverted.segment {
  /*  http://uigradients.com/#  */
 }
+
 .slick {
-	border-bottom: 1px solid #333;    
+	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
 }
 .slick .arrow {
     cursor: pointer;
     background: #000;
     position: absolute;
-    z-index: 999;
     padding: 10px 10px 10px 10px;
     top: 40%;
 }
@@ -151,6 +196,15 @@ span.yellow {
 .slick .arrow.left {
     left: 0;
 }
+.social-media a {
+	display: inline;
+}
+.transition {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;	
+}
 
 .slick .arrow.right {
     right: 0;
@@ -158,6 +212,44 @@ span.yellow {
 
 .logo-head {
     position: relative;
+}
+.header-background {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 998;
+}
+.header-backdrop {	
+	background: url('/images/header-stripe.png') 0 0 repeat;
+	width: 30%;
+	float: left;
+	height: 56px;
+	display: block;
+}
+.header-backdrop-dark {
+	background: #333;
+	width: 70%;
+	float: left;
+	height: 56px;
+	display: block;
+}
+.ui.inverted.menu.logo-nav {
+	background: transparent;
+	height: 56px;
+}
+.ui.inverted.menu.logo-nav .item:before, 
+.ui.vertical.inverted.menu.logo-nav .item:before {
+	border: none;
+	background: transparent;
+}
+.ui.menu.yellow-bg {
+	background: #f2da0d;
+	border-top: none;
+}
+.logo-container {
+	z-index: 999;
+	background: #333;
 }
 .slogan-block {
     position: relative;
@@ -170,7 +262,6 @@ span.yellow {
 .main.masthead.segment {
     min-height: auto;
     padding: 0;
-    border-bottom: 2px solid #ccc !important;
 }
 img.secondary {
     position: absolute;
@@ -184,10 +275,26 @@ img.secondary {
     border: 1px solid #ddd;
 	background: #fff;
 }
+.ui.inverted.menu .item.logo {
+	border: none;
+}
+.ui.inverted.menu .item.logo:hover {
+	background: #333;
+}
 .offset {
 	background: #E0EAFC; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
+}
+.ui.grid {
+	margin-top: 15px;
+}
+.ui[class*="vertical rectangle"].ad {
+	max-width: 320px;
+	width: 100%;
+}
+.with-sidebar {
+	background: url('/images/bg-spacer-line-vert.png') right top repeat-y;
 }
 
 /*======
@@ -202,7 +309,7 @@ img.secondary {
 
 .ui.inverted.segment, 
 .ui.primary.inverted.segment {
-	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
+
 }
 .hidden.menu {
 	display: none;
@@ -273,7 +380,10 @@ img.secondary {
 	}
 	.hide-mobile {
 		display: none !important;
-	}	
+	}
+	.full {
+		display: block !important;
+	}
 	.ui.fixed.menu {
 
 	}

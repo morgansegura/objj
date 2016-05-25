@@ -4,12 +4,32 @@ var express 	= require("express"),
 	User 		= require("../models/user");
 
 /*====
- ==== ROOT ROUTE
+ ==== BASE ROUTES
  ====*/
 	
 // ==* Home Route *==
 router.get("/", function(req, res){
     res.render("landing");
+});
+	
+// ==* Classes Route *==
+router.get("/classes", function(req, res){
+    res.render("classes");
+});
+
+// ==* Instructors Route *==
+router.get("/instructors", function(req, res){
+    res.render("instructors");
+});
+
+// ==* About Route *==
+router.get("/about", function(req, res){
+    res.render("about");
+});
+
+// ==* Waiver Route *==
+router.get("/waiver", function(req, res){
+    res.render("waiver");
 });
 
 /*====

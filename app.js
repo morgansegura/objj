@@ -16,8 +16,7 @@ var express     	= require("express"),
  ====*/
 var indexRoutes = require("./routes/index"),
 	campgroundRoutes = require("./routes/campgrounds"),
-	commentRoutes = require("./routes/comments"),
-	routeRoutes = require("./routes/routes");
+	commentRoutes = require("./routes/comments");
 
 /*====
  ==== SETP THE DB
@@ -91,7 +90,6 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
-app.use("/about", routeRoutes);
 
 /*====
  ==== START THE SERVER

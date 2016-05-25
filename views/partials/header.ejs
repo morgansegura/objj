@@ -15,7 +15,7 @@
 
         <%# Web Fonts %>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css"> 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin" rel="stylesheet" type="text/css"> 
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700' rel='stylesheet' type='text/css'> 
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
 		
         <%# External Stylesheets %>
@@ -46,7 +46,7 @@
     </head>
     <body>
 	<%# Header %>
-	<div class="show-mobile ui sidebar inverted vertical menu">
+	<div class="show-mobile ui sidebar vertical menu">
 		<a class="view-ui item hamburger">
 			<i class="large remove icon"></i> Close
 		</a>		  
@@ -54,30 +54,42 @@
 		<a class="item" href="/classes">Classes</a>
 		<a class="item" href="/instructors">Instructors</a>
 		<a class="item" href="/about">About Us</a>          
-		<a class="item contact-form" href="/">Contact Us</a>          
+		<a class="item contact-form" href="#">Contact Us</a>          
 		<a class="item" href="/waiver">Waiver</a> 
 	</div>
 	  <%# Pusher Content %>
 	  <div class="pusher">	
 		<header id="header">		
-			<%# Inverted menu %>	
-			<div class="ui fixed inverted menu">
-				<%# Main Navigation %>	
-				<nav class="ui container">
+			<%# Inverted menu %>
+			
+			<div class="clearfix ui fixed inverted menu logo-nav">
+				<div class="ui container logo-container">
 					<%# Branding Section %>	
 					<a class="show-mobile view-ui item hamburger">
 						<i class="large sidebar icon"></i>
 					</a>					
-					<a class="item logo clearfix" href="/">
+					<img class="hide-mobile ui left image" src="/images/img-header-fixture.png">
+					<a class="item logo clearfix" href="/">	
 						<img class="logo" src="/images/objj-icon-new.svg">
 						<div class="logo-text-large"> Outliers <span>&reg;</span></div>
 					</a>
+				</div>
+
+				<div class="hide-mobile header-background clearfix">
+					<div class="header-backdrop"></div>
+					<div class="header-backdrop-dark"></div>
+				</div>
+
+			</div>
+			<div class="hide-mobile ui fixed menu yellow-bg" style="top: 50px;">
+				<%# Main Navigation %>	
+				<nav class="ui container">
 					<%# Navigation Menu %>
 					<a class="item" href="/">Home</a>
 					<a class="item" href="/classes">Classes</a>
 					<a class="item" href="/instructors">Instructors</a>
 					<a class="item" href="/about">About Us</a>          
-					<a class="item contact-form" href="/">Contact Us</a>          
+					<a class="item contact-form" href="#">Contact Us</a>          
 					<a class="item" href="/waiver">Waiver</a>   						
 				</nav><%# End Main Nav %>	
 			</div><%# End Menu %>
@@ -88,7 +100,7 @@
 			<%# Carousel LogoHead %>
 			<div class="ui photo row logo-head">
 				<%# Slick Container %>
-				<div class=" clearfix slick container" style="width: 100%; margin: 55px auto 0 auto;">
+				<div class="hide-mobile ui clearfix slick" style="margin: 91px auto 0 auto;">
 					<%# Image Set TODO: make this dynamic with image uploads in admin %>
 					<a class="outliers-photos" href="/images/slider1.jpg">
 					  <img src="/images/slider1.jpg" class="ui bordered big image">
@@ -123,12 +135,12 @@
 				</div>     
 				<%# Slogan Block %>
 				<div class="slogan-block">
-					<h2> Built on the foundation of 
+					<h2> <span class="hide-mobile">Built on the foundation of </span>
 						<span class="yellow">self</span>, 
-						<span class="yellow">family</span> and 
-						<span class="yellow">community</span>.                 
+						<span class="yellow">family</span>, <span class="hide-mobile">and</span> 
+						<span class="yellow">community</span><span class="hide-mobile">.</span>                 
 						<span>&nbsp;&nbsp;
-							<a href="/#!/" class="ui big green button contact-form">
+							<a href="#" class="ui big green button contact-form">
 								Try For Free<i class="right arrow icon"></i>
 							</a>
 						</span>                 
@@ -136,7 +148,7 @@
 				</div><%# End Slogan Block %>
 			</div><%# End Carousel LogoHead %>
 		</div><%# End Carousel Wrapper %>
-		
+
 		<%# Contact Modal %>
 		<div class="ui modal">
 			<i class="close icon"></i>
