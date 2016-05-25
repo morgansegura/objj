@@ -8,7 +8,13 @@ body {
     font-family: 'PT Sans Caption', roboto, Myriad, Helvetica, Arial, sans-serif;
 	font-size: 100%;
 }
-
+.body.pushable,
+body.pushable>.pusher{
+	background: url('/images/bg-body.jpg') 0 0 repeat;
+}
+.show-mobile.ui.inverted.menu {
+	background: #111;
+}
 /*======
  ==== TYPOGRAPHY
  ======*/
