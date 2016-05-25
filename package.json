@@ -1,7 +1,11 @@
 {
   "name": "objj",
   "version": "1.0.0",
-  "description": "OutlierBjj",
+  "description": "Ribeiro Jiu Jitsu Santee, CA - Outliers Jiu Jitsu - Santee, CA",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morgansegura/objj.git"
+  },  	
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",

@@ -1,242 +1,229 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html>
     <head>
+		<%# Metadata %>
         <meta charset="UTF-8" />        
         <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
         <meta name="viewport" content="width=device-width,initial-scale=1"> 
-        <meta name="description" content="Code Along"> 
-        <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development"> 
+        <meta name="description" content="Learn Brazilian Jiu Jitsu in Santee at Outliers Jiu Jitsu, Santee's top BJJ school and member of the Ribeiro Jiu Jitsu Association."> 
+        <meta name="keywords" content="San Diego, Brazilian Jiu Jitsu, kids classes, adult classes, women classes Santee, grappling classes, self defense, bjj, jiu jitsu san diego"> 
         <meta name="author" content="Morgan Segura"> 
-        <title> YelpCamp.com</title>
+        <title>Ribeiro Jiu Jitsu Santee, CA - Outliers Jiu Jitsu - Santee, CA</title>
 
-        <!-- Bootstrap CDN -->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" >
-        <!-- Local CSS Files -->
-        <link href="/css/style.css" rel="stylesheet" > 
-        <link href="/css/core.css" rel="stylesheet" type="text/css">         
-
-        <!-- Google Fonts: Roboto by: Christian Robertson -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-
-        <!-- Fav Icon -->
+        <%# Favicon %>
         <link href="/images/brand/favicon.svg" rel="shortcut icon" type="image/x-icon">
 
-        <!-- External Fonts -->
+        <%# Web Fonts %>
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css"> 
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin" rel="stylesheet" type="text/css">  
-        <!-- External CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin" rel="stylesheet" type="text/css"> 
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+		
+        <%# External Stylesheets %>
         <link href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" rel="stylesheet" type="text/css">    
         <link href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" rel="stylesheet" type="text/css">
         <link href="lib/fancybox/dist/css/jquery.fancybox.css" rel="stylesheet" type="text/css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css" rel="stylesheet" type="text/css"> 
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.4/semantic.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<%# Main Stylesheet %>
+        <link href="/css/core.css" rel="stylesheet" type="text/css">
 
-        <!-- External JS -->
+        <%# JavaScript %>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>	
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
         <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script> 
         <script type="text/javascript" src="lib/fancybox/dist/js/jquery.fancybox.js"></script>   
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>     
-
-        
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+		
+		<%# Main Scripts %>
+		<script type="text/javascript" src="/scripts/scripts.js"></script>
+		
+        <%# IE HTML5 Responsive Help %>
         <!--[if lt IE 9]>
                 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
                 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->      
-
     </head>
-    
-<!-- Following Menu -->
-	<div class="ui fixed inverted menu">
-	  <div class="ui container">
-		<a class="item logo clearfix" href="/#!/">
-			<img class="logo" src="/images/objj-icon-new.svg">
-			<div class="logo-text-large"> Outliers <span>&reg;</span></div>
-			<p class="under-text">Brazilian Jiu Jitsu</p>
-		</a>
-
-		<a class="item" href="/#!/">Home</a>
-		<a class="item" href="/#!/classes">Classes</a>
-		<a class="item" href="/#!/instructors">Instructors</a>
-		<a class="item" href="/#!/about">About Us</a>          
-		<a class="item contact-form" href="/#!/">Contact Us</a>          
-		<a class="item" href="/#!/waiver">Waiver</a> 
-		  
-		  <div class="ui simple dropdown item mobile-on">
-			  Dropdown <i class="dropdown icon"></i>
-			<div class="menu">
-			  <a class="item" href="#">Link Item</a>
-			  <a class="item" href="#">Link Item</a>
-			  <div class="divider"></div>
-			  <div class="header">Header Item</div>
-			  <div class="item">
-				<i class="dropdown icon"></i>
-				Sub Menu
-				<div class="menu">
-				  <a class="item" href="#">Link Item</a>
-				  <a class="item" href="#">Link Item</a>
-				</div>
-			  </div>
-			  <a class="item" href="#">Link Item</a>
-			</div>
-		  </div>    
-        </div>
-    </div>
-  <div class="main ui inverted vertical masthead center aligned segment">
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slick').slick({
-          centerMode: true,
-          centerPadding: '60px',
-          dots: false,
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          autoplay: true,
-          autoplaySpeed: 2000,          
-          speed: 500,
-          nextArrow: '<div class="arrow right"><i class="chevron right icon"></i></div>',
-          prevArrow: '<div class="arrow left"><i class="chevron left icon"></i></div>'
-        });
-	$("a.outliers-photos").fancybox({
-		'transitionIn'	:	'elastic',
-		'transitionOut'	:	'elastic',
-		'speedIn'		:	600, 
-		'speedOut'		:	200, 
-		'overlayShow'	:	false
-	}); 
-        $('.contact-form').on('click', function(){
-           $('.ui.modal').modal('show');  
-        });
-               
-    });	
-  </script>
-        <!-- Fancybox and Slick Slider -->
-        <div class="ui photo row logo-head">
-          <div class=" clearfix slick container" style="width: 100%; margin: 55px auto 0 auto;">
-              <div>
-              <a class="outliers-photos" href="modules/core/img/slider1.jpg">
-                  <img src="/images/slider1.jpg" class="ui bordered big image">
-              </a>
-                  </div>
-              <a class="outliers-photos" href="/images/slider2.jpg">
-                  <img src="/images/slider2.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider3.jpg">
-                  <img src="/images/slider3.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider4.jpg">
-                  <img src="/images/slider4.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider5.jpg">
-                  <img src="/images/slider5.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider6.jpg">
-                  <img src="/images/slider6.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider7.jpg">
-                  <img src="/images/slider7.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider8.jpg">
-                  <img src="/images/slider8.jpg" class="ui big bordered image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider9.jpg">
-                  <img src="/images/slider9.jpg" class="ui bordered big image">
-              </a>                   
-              <a class="outliers-photos" href="/images/slider10.jpg">
-                  <img src="/images/slider10.jpg" class="ui bordered big image">
-              </a>                   
-
-          </div>     
-            <!--<img class="secondary" src="/images/objj-logo-vert-light.svg">  -->
-          <div class="secondary-logo">
-
-            <h2> Built on the foundation of <span class="yellow">self</span>, <span class="yellow">family</span> and <span class="yellow">community</span>.                 
-             <span>&nbsp;&nbsp;<a href="/#!/" class="ui huge green button contact-form">Try For Free<i class="right arrow icon"></i></a></span>                 
-              </h2>
-   
-          </div>
-        </div>
-
-    </div>
-<div class="ui modal">
-  <i class="close icon"></i>
-  <div class="header">
-    Profile Picture
-  </div>
-  <div class="image content">
-    <div class="ui medium image">
-      <img src="/images/avatar/large/chris.jpg">
-    </div>
-    <div class="description">
-      <div class="ui header">We've auto-chosen a profile image for you.</div>
-      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-      <p>Is it okay to use this photo?</p>
-    </div>
-  </div>
-  <div class="actions">
-    <div class="ui black deny button">
-      Nope
-    </div>
-    <div class="ui positive right labeled icon button">
-      Yep, that's me
-      <i class="checkmark icon"></i>
-    </div>
-  </div>
-</div>
-          
-          
-    <!--
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">
-              <span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span> 
-              YelpCamp
-            </a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-			  <% if(!currentUser) { %>
-			  <li><a href="/login">Login</a></li>
-			  <li><a href="/register">Sign Up</a></li>
-			  <% } else { %>
-			  <li class="userclass"><a href="#">Welcome back <b><%= currentUser.username %></b></a></li>
-			  <li><a href="/logout">Logout</a></li>
-			  <% } %>
-			  
-            <li class="active"><a href="/campgrounds">Campgrounds <span class="sr-only">(current)</span></a></li>
-            <li><a href="/campgrounds/new">Add New Campground</a></li>
-
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-          -->
-          
-	<div class=container>
-		
-		<% if( error && error.length > 0 ) { %>
-		<div class="alert alert-danger" role="alert">
-			<%= error %>
-		</div>
-		<% } %>
-		
-		<% if( success && success.length > 0 ) { %>
-		<div class="alert alert-success" role="success">
-			<%= success %>
-		</div>
-		<% } %>	
-		
+    <body>
+	<%# Header %>
+	<div class="show-mobile ui sidebar inverted vertical menu">
+		<a class="view-ui item hamburger">
+			<i class="large remove icon"></i> Close
+		</a>		  
+		<a class="item" href="/">Home</a>
+		<a class="item" href="/classes">Classes</a>
+		<a class="item" href="/instructors">Instructors</a>
+		<a class="item" href="/about">About Us</a>          
+		<a class="item contact-form" href="/">Contact Us</a>          
+		<a class="item" href="/waiver">Waiver</a> 
 	</div>
+	  <%# Pusher Content %>
+	  <div class="pusher">	
+		<header id="header">		
+			<%# Inverted menu %>	
+			<div class="ui fixed inverted menu">
+				<%# Main Navigation %>	
+				<nav class="ui container">
+					<%# Branding Section %>	
+					<a class="show-mobile view-ui item hamburger">
+						<i class="large sidebar icon"></i>
+					</a>					
+					<a class="item logo clearfix" href="/">
+						<img class="logo" src="/images/objj-icon-new.svg">
+						<div class="logo-text-large"> Outliers <span>&reg;</span></div>
+					</a>
+					<%# Navigation Menu %>
+					<a class="item" href="/">Home</a>
+					<a class="item" href="/classes">Classes</a>
+					<a class="item" href="/instructors">Instructors</a>
+					<a class="item" href="/about">About Us</a>          
+					<a class="item contact-form" href="/">Contact Us</a>          
+					<a class="item" href="/waiver">Waiver</a>   						
+				</nav><%# End Main Nav %>	
+			</div><%# End Menu %>
+		</header><%# End Header %>	
+	
+		<%# Carousel Wrapper %>
+		<div class="main ui inverted vertical masthead center aligned segment">
+			<%# Carousel LogoHead %>
+			<div class="ui photo row logo-head">
+				<%# Slick Container %>
+				<div class=" clearfix slick container" style="width: 100%; margin: 55px auto 0 auto;">
+					<%# Image Set TODO: make this dynamic with image uploads in admin %>
+					<a class="outliers-photos" href="/images/slider1.jpg">
+					  <img src="/images/slider1.jpg" class="ui bordered big image">
+					</a>
+					<a class="outliers-photos" href="/images/slider2.jpg">
+					  <img src="/images/slider2.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider3.jpg">
+					  <img src="/images/slider3.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider4.jpg">
+					  <img src="/images/slider4.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider5.jpg">
+					  <img src="/images/slider5.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider6.jpg">
+					  <img src="/images/slider6.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider7.jpg">
+					  <img src="/images/slider7.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider8.jpg">
+					  <img src="/images/slider8.jpg" class="ui big bordered image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider9.jpg">
+					  <img src="/images/slider9.jpg" class="ui bordered big image">
+					</a>                   
+					<a class="outliers-photos" href="/images/slider10.jpg">
+					  <img src="/images/slider10.jpg" class="ui bordered big image">
+					</a>                   
+				</div>     
+				<%# Slogan Block %>
+				<div class="slogan-block">
+					<h2> Built on the foundation of 
+						<span class="yellow">self</span>, 
+						<span class="yellow">family</span> and 
+						<span class="yellow">community</span>.                 
+						<span>&nbsp;&nbsp;
+							<a href="/#!/" class="ui big green button contact-form">
+								Try For Free<i class="right arrow icon"></i>
+							</a>
+						</span>                 
+					</h2>
+				</div><%# End Slogan Block %>
+			</div><%# End Carousel LogoHead %>
+		</div><%# End Carousel Wrapper %>
+		
+		<%# Contact Modal %>
+		<div class="ui modal">
+			<i class="close icon"></i>
+			<div class="header">
+			Profile Picture
+			</div>
+			<div class="ui segments">
+				<div class="ui segment">
+					<p>Top</p>
+				</div>
+				<div class="ui segments">
+					<div class="ui segment">
+						<p>Nested Top</p>
+					</div>
+					<div class="ui segment">
+						<p>Nested Middle</p>
+					</div>
+					<div class="ui segment">
+						<p>Nested Bottom</p>
+					</div>
+				</div>
+				<div class="ui segment">
+					<p>Middle</p>
+				</div>
+				<div class="ui horizontal segments">
+					<div class="ui segment">
+						<p>Top</p>
+					</div>
+					<div class="ui segment">
+						<p>Middle</p>
+					</div>
+					<div class="ui segment">
+						<p>Bottom</p>
+					</div>
+				</div>
+				<div class="ui segment">
+					<p>Bottom</p>
+				</div>
+			</div>
+		</div><%# End Contact Modal %>
+                    
+		<!--
+		<%# Default Bootstrap Navigation %>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span> 
+						YelpCamp
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<% if(!currentUser) { %>
+						<li><a href="/login">Login</a></li>
+						<li><a href="/register">Sign Up</a></li>
+						<% } else { %>
+						<li class="userclass"><a href="#">Welcome back <b><%= currentUser.username %></b></a></li>
+						<li><a href="/logout">Logout</a></li>
+						<% } %>
+						<li class="active"><a href="/campgrounds">Campgrounds <span class="sr-only">(current)</span></a></li>
+						<li><a href="/campgrounds/new">Add New Campground</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		-->
+        <%# Alert Section %>  
+		<div class="container">	
+			<%# Error %>  
+			<% if( error && error.length > 0 ) { %>
+			<div class="alert alert-danger" role="alert">
+				<%= error %>
+			</div>
+			<% } %>
+			<%# Success %>  
+			<% if( success && success.length > 0 ) { %>
+			<div class="alert alert-success" role="success">
+				<%= success %>
+			</div>
+			<% } %>			
+		</div>
+		

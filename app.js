@@ -16,12 +16,13 @@ var express     	= require("express"),
  ====*/
 var indexRoutes = require("./routes/index"),
 	campgroundRoutes = require("./routes/campgrounds"),
-	commentRoutes = require("./routes/comments");
+	commentRoutes = require("./routes/comments"),
+	routeRoutes = require("./routes/routes");
 
 /*====
  ==== SETP THE DB
  ====*/
-var url = process.env.DATABASEURL || "mongodb://localhost/yelp_camp_v4";
+var url = process.env.DATABASEURL || "mongodb://localhost/objj";
 mongoose.connect(url);
 // mongoose.connect("mongodb://localhost/yelp_camp_v4");
 // mongoose.connect("mongodb://morgansegura:SeGuRa-1980mongolabyelpcamp@ds021182.mlab.com:21182/yelpcamp");
@@ -90,6 +91,7 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+app.use("/about", routeRoutes);
 
 /*====
  ==== START THE SERVER
