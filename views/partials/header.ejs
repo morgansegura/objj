@@ -60,8 +60,7 @@
 	  <%# Pusher Content %>
 	  <div class="pusher">	
 		<header id="header">		
-			<%# Inverted menu %>
-			
+			<%# Inverted menu %>			
 			<div class="clearfix ui fixed inverted menu logo-nav">
 				<div class="ui container logo-container">
 					<%# Branding Section %>	
@@ -135,7 +134,7 @@
 				</div>     
 				<%# Slogan Block %>
 				<div class="slogan-block">
-					<h2> <span class="hide-mobile">Built on the foundation of </span>
+					<h2> <span>Built on the foundation of </span>
 						<span class="yellow">self</span>, 
 						<span class="yellow">family</span>, <span>and</span> 
 						<span class="yellow">community</span><span>.</span>                 
@@ -157,71 +156,53 @@
 			</div>
 			<div class="ui segments">
 				<div class="ui segment">
-					<p>Top</p>
-				</div>
-				<div class="ui segments">
-					<div class="ui segment">
-						<p>Nested Top</p>
-					</div>
-					<div class="ui segment">
-						<p>Nested Middle</p>
-					</div>
-					<div class="ui segment">
-						<p>Nested Bottom</p>
-					</div>
-				</div>
-				<div class="ui segment">
-					<p>Middle</p>
-				</div>
-				<div class="ui horizontal segments">
-					<div class="ui segment">
-						<p>Top</p>
-					</div>
-					<div class="ui segment">
-						<p>Middle</p>
-					</div>
-					<div class="ui segment">
-						<p>Bottom</p>
-					</div>
+					<form class="ui form">
+					  <div class="field">
+						<label>First Name</label>
+						<input type="text" name="first-name" placeholder="First Name">
+					  </div>
+					  <div class="field">
+						<label>Last Name</label>
+						<input type="text" name="last-name" placeholder="Last Name">
+					  </div>
+  <div class="inline fields">
+    <label>Phone Number</label>
+    <div class="field">
+      <input type="text" placeholder="(xxx)">
+    </div>
+    <div class="field">
+      <input type="text" placeholder="xxx">
+    </div>
+    <div class="field">
+      <input type="text" placeholder="xxxx">
+    </div>
+  </div>						
+					  <div class="field">
+						<div class="ui checkbox">
+						  <input type="checkbox" tabindex="0" class="hidden">
+						  <label>I agree to the Terms and Conditions</label>
+						</div>
+					  </div>
+					  <button class="ui button" type="submit">Submit</button>
+					</form>	
 				</div>
 				<div class="ui segment">
 					<p>Bottom</p>
 				</div>
 			</div>
 		</div><%# End Contact Modal %>
-                    
+
 		<!--
 		<%# Default Bootstrap Navigation %>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/">
-						<span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span> 
-						YelpCamp
-					</a>
-				</div>
 
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<% if(!currentUser) { %>
-						<li><a href="/login">Login</a></li>
-						<li><a href="/register">Sign Up</a></li>
-						<% } else { %>
-						<li class="userclass"><a href="#">Welcome back <b><%= currentUser.username %></b></a></li>
-						<li><a href="/logout">Logout</a></li>
-						<% } %>
-						<li class="active"><a href="/campgrounds">Campgrounds <span class="sr-only">(current)</span></a></li>
-						<li><a href="/campgrounds/new">Add New Campground</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		<% if(!currentUser) { %>
+		<li><a href="/login">Login</a></li>
+		<li><a href="/register">Sign Up</a></li>
+		<% } else { %>
+		<li class="userclass"><a href="#">Welcome back <b><%= currentUser.username %></b></a></li>
+		<li><a href="/logout">Logout</a></li>
+		<% } %>
+
 		-->
         <%# Alert Section %>  
 		<div class="container">	

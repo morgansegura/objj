@@ -23,8 +23,6 @@ var indexRoutes = require("./routes/index"),
  ====*/
 var url = process.env.DATABASEURL || "mongodb://localhost/objj";
 mongoose.connect(url);
-// mongoose.connect("mongodb://localhost/yelp_camp_v4");
-// mongoose.connect("mongodb://morgansegura:SeGuRa-1980mongolabyelpcamp@ds021182.mlab.com:21182/yelpcamp");
 
 /*====
  ==== SETUP BODY PARSER

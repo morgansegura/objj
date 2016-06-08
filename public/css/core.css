@@ -15,6 +15,18 @@ body.pushable>.pusher{
 .show-mobile.ui.inverted.menu {
 	background: #111;
 }
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
 /*======
  ==== TYPOGRAPHY
  ======*/
@@ -112,6 +124,7 @@ li {
 /*======
  ==== HEADER NAVIGATION
  ======*/
+
 .ui.fixed.menu {
 	/*border-bottom: 2px solid #f2da0d;*/
 }
@@ -151,6 +164,7 @@ span.yellow {
 /*======
  ==== CONTENT
  ======*/
+
 .container-padding-top {
 
 }
@@ -184,6 +198,15 @@ span.yellow {
 .home .ui.inverted.segment, .home.ui .primary.inverted.segment {
  /*  http://uigradients.com/#  */
 }
+
+.border-image {
+	margin-bottom: 30px;
+}
+
+.border-image img {
+	border:3px solid #fff;
+}
+
 
 .slick {
 	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
@@ -234,7 +257,7 @@ span.yellow {
 	display: block;
 }
 .header-backdrop-dark {
-	background: #333;
+	background: #5d5c5a;
 	width: 70%;
 	float: left;
 	height: 56px;
