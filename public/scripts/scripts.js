@@ -59,4 +59,19 @@ $(document).ready(function(){
 		'speedOut'		:	200, 
 		'overlayShow'	:	false
 	});	
+
+	$('.ui.sticky')
+	  .sticky({
+		context: '#header'
+	  });	
+
+	// *==* Wrapper Height *==*	
+	//var  headerHeight = $('.wrapper').outerHeight(true)
+	var totalHeight = $(document).outerHeight(true);
+	
+	$('.wrapper-right').height(totalHeight);
+
+	$(window).resize(function(){
+		$('.wrapper-right').height(totalHeight);
+	});
 });	

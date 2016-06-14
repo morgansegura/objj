@@ -1,134 +1,81 @@
+<!-- Header -->
 <% include partials/header %>
+<!-- Carousel -->
+<% include partials/carousel %>
+<!-- Slogan -->
+<% include partials/slogan %>
+<!-- Wrapper -->
+<section id="home" class="wrapper clearfix">
+	<div class="wrapper-right"></div>
+	<!-- Main Container -->
+	<div class="container background-light clearfix">
 
-<section id="home">
-	<%# Jumbotron Container %>
-
-	<%# Main container %>
-	<div class="ui stackable grid container">
-		<%# With Sidebar Content %>
-		<div class="ui twelve wide column with-sidebar">
-			<%# Segment container %>
-			<div class="ui basic segment">				
-				<%# Mobile Header Stack %>
-				<div class="show-mobile">
-					<h2 class="whitish-text"><i class="phone square icon"></i> Call Now! <a class="orange-text" href="tel:1-408-555-5555">1-408-555-5555</a></h2>     
-					<iframe class="google-frame"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=10251+Mast+Blvd+Santee,+Ca&amp;aq=&amp;sll=37.230328,-95.712891&amp;sspn=62.606855,114.521484&amp;ie=UTF8&amp;hq=&amp;hnear=10251+Mast+Blvd,+Santee,+California+92071&amp;ll=32.858032,-116.97813&amp;spn=0.01442,0.025749&amp;z=14&amp;output=embed"></iframe>	
-				</div><%# End Mobile Header Stack %>
-				<%# Ribeiro Association %>
-				<div class="ui stackable grid">
-					<%# Image %>
-					<div class="hide-mobile ui two wide column">
-						<img class="ui small image" src="/images/brand/ribeiro-star-yellow.svg" >
-					</div>
-					<%# Content %>
-					<div class="ui fourteen wide column">
-						<h2 class="ui headline right whitish-text">Official school of the <span class="yellow-text">Ribeiro Jiu-Jitsu Association</span></h2>
-					
-						<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>		
-
-						<a class="ui orange large button full" href="/#!/about#outliersbjj">Learn More about Outliers Jiu-Jitsu</a>
-					</div><%# End Content %>	
-				</div><%# End Ribeiro Association %>
-					
-				<hr class="underline-dark">	
+		<!-- Main Content -->
+		<div class="main-content">
+			<!-- Official School-->
+			<div>
 				
-				<%# About Classes %>
-				<div class="ui stackable grid">
-					<%# Image %>
-					<div class="ui two wide column">
-						<img class="ui small image" src="/images/brand/objj-icon-plain.svg" >
-					</div>
-					<%# Content %>
-					<div class="ui fourteen wide column">
-						<h2 class="ui headline right whitish-text">We offer Adult and Youth Classes <span class="yellow-text">for all Ages</span></h2>
-					
-						<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>
-						
-					</div><%# End Content %>
+				<h2 class="ribeiro-star whitish-text">Official school of the <span class="yellow-text">Ribeiro Jiu-Jitsu Association</span></h2>
+				<p class="clearfix">
+					<img class="ui small image inline-image left" src="/images/brand/outliers-patch.svg" >				Outliers Jiu Jitsu is an official school of the Ribeiro Jiu-Jitsu Association serving Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in all aspects of mind, body, and spirit.
+					<a href="/about">Learn More about Outliers Jiu Jitsu</a>
+				</p>
 
-				</div><%# End Ribeiro Association %>
-				
-				<div class="ui stackable grid">
-
-					<div class="clearfix ui stackable three column grid border-image">
-						<div class="hide-mobile column">
-							<img src="/images/slider4.jpg" class="ui image" >
-						</div>
-						<div class="hide-mobile column">
-							<img src="/images/slider8.jpg" class="ui image" >
-						</div>
-						<div class="hide-mobile column">
-							<img src="/images/slider9.jpg" class="ui image" >
-						</div>			
-					</div>	
-
-					<a class="ui orange large button full" href="/#!/about#outliersbjj">Learn More about Outliers Jiu-Jitsu</a>
-
-				</div>				
-				
-				
-				<hr class="underline-dark">	
-				
-				<%# Ribeiro Association %>
-				<div class="ui stackable grid">
-					<%# Image %>
-					<div class="hide-mobile ui two wide column">
-						<img class="ui small image" src="/images/brand/objj-icon-plain.svg" >
-					</div>
-					<%# Content %>
-					<div class="ui fourteen wide column">
-						<h2 class="ui headline right whitish-text">We offer Adult and Youth Classes <span class="yellow-text">for all Ages</span></h2>
-					
-						<p>We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in </p>
-						
-						<div class="ui stackable three column grid border-image">
-							<div class="hide-mobile column">
-								<img src="/images/slider4.jpg" class="ui image" >
-							</div>
-							<div class="hide-mobile column">
-								<img src="/images/slider8.jpg" class="ui image" >
-							</div>
-							<div class="hide-mobile column">
-								<img src="/images/slider9.jpg" class="ui image" >
-							</div>			
-						</div>	
-
-						<a class="ui orange large button full" href="/#!/about#outliersbjj">Learn More about Our Instructors</a>
-					</div><%# End Content %>	
-				</div><%# End Ribeiro Association %>								
-
-				
-			</div><%# End Basic Segment %>	
-		</div><%# End with sidebar %>		
-
-		<%# Sidebar %>	
-		<div class="hide-mobile ui items four wide column">
-		<% include partials/sidebar %>
-		</div>
-		
-	</div><%# End Main Conatianer %>	
-	
-	<hr class="underline-dark">
-	
-	<%# Testimonial section %>
-	<div class="ui vertical stripe quote segment">  
-		<div class="ui equal width stackable internally celled grid">
-			<div class="ui divider"></div>         
-			<div class="center aligned row offset">
-				<div class="column">
-					<h3>"What a Company"</h3>
-					<p>That is what they all say about us</p>
-				</div>
-				<div class="column">
-					<h3>"More than just a Jiu Jitsu class. We are a family!"</h3>
-					<p>
-					<img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-					</p>
-				</div>
 			</div>
-		</div>
-	</div>
-</section>
+	
+			<hr class="underline-dark">	
+			
+			<!-- About Classes -->
+			<div>
+				<h2 class="outliers-star whitish-text">We offer <span class="yellow-text">Adult and Youth Classes</span> for all ages</h2>
+				<p>
+					We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in 
+				</p>
 
-</div><%# End Pusher Content %>
+				<div class="images-block clearfix">
+					<a class="outliers-photos" href="/images/slider8.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/slider8.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>
+					<a class="outliers-photos" href="/images/img-class2.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/img-class2.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>
+					<a class="outliers-photos" href="/images/img-class3.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/img-class3.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>						
+
+				</div>
+
+				<hr class="underline-dark">	
+			</div>	
+			
+			<!-- About Instructors -->
+			<div>
+				<h2 class="outliers-star whitish-text">Our Instructors are <span class="yellow-text">Kind, Patient and Respectful</h2>
+				<p>
+					We serve Santee, CA and the entire East County of San Diego. Outliers BJJ is built on the foundation of self, family and community. The belief is that, if you take care of your self, you can raise a family, and with a family you can build a community. The aim of Outliers Jiu-Jitsu is to provide a learning environment that offers growth in 
+				</p>
+
+				<div class="images-block clearfix">
+					<a class="outliers-photos" href="/images/img-class1.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/img-class1.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>
+					<a class="outliers-photos" href="/images/img-class2.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/img-class2.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>
+					<a class="outliers-photos" href="/images/img-class3.jpg" title="Outliers Jiu Jitsu Classes">
+					   <img src="/images/img-class3.jpg" alt="Outliers Jiu Jitsu Classes" />
+					</a>						
+
+				</div>
+
+			</div>	
+
+		</div><!-- End Main Content -->	
+		<!-- Sidebar -->
+		<% include partials/sidebar %>			
+	</div><!-- End Container -->
+		
+</section><!-- End Wrapper -->
+
+<!-- Footer -->
 <% include partials/footer %>

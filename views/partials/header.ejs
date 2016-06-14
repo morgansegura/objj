@@ -45,9 +45,10 @@
         <![endif]-->      
     </head>
     <body>
+	
 	<%# Header %>
 	<div class="show-mobile ui sidebar inverted vertical menu">
-		<a class="view-ui item hamburger">
+		<a class="ui item hamburger">
 			<i class="large remove icon"></i> Close
 		</a>		  
 		<a class="item" href="/">Home</a>
@@ -67,7 +68,7 @@
 					<a class="show-mobile view-ui item hamburger">
 						<i class="large sidebar icon"></i>
 					</a>					
-					<img class="hide-mobile ui left image" src="/images/img-header-fixture.png">
+					<img class="hide-mobile ui left image" style="left: -50px;" src="/images/img-header-fixture.png">
 					<a class="item logo clearfix" href="/">	
 						<img class="logo" src="/images/objj-icon-new.svg">
 						<div class="logo-text-large"> Outliers <span>&reg;</span></div>
@@ -93,105 +94,9 @@
 				</nav><%# End Main Nav %>	
 			</div><%# End Menu %>
 		</header><%# End Header %>	
-	
-		<%# Carousel Wrapper %>
-		<div class="main ui inverted vertical masthead center aligned segment">
-			<%# Carousel LogoHead %>
-			<div class="ui photo row logo-head">
-				<%# Slick Container %>
-				<div class="ui clearfix slick" style="margin: 91px auto 0 auto;">
-					<%# Image Set TODO: make this dynamic with image uploads in admin %>
-					<a class="outliers-photos" href="/images/slider1.jpg">
-					  <img src="/images/slider1.jpg" class="ui bordered big image">
-					</a>
-					<a class="outliers-photos" href="/images/slider2.jpg">
-					  <img src="/images/slider2.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider3.jpg">
-					  <img src="/images/slider3.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider4.jpg">
-					  <img src="/images/slider4.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider5.jpg">
-					  <img src="/images/slider5.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider6.jpg">
-					  <img src="/images/slider6.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider7.jpg">
-					  <img src="/images/slider7.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider8.jpg">
-					  <img src="/images/slider8.jpg" class="ui big bordered image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider9.jpg">
-					  <img src="/images/slider9.jpg" class="ui bordered big image">
-					</a>                   
-					<a class="outliers-photos" href="/images/slider10.jpg">
-					  <img src="/images/slider10.jpg" class="ui bordered big image">
-					</a>                   
-				</div>     
-				<%# Slogan Block %>
-				<div class="slogan-block">
-					<h2> <span>Built on the foundation of </span>
-						<span class="yellow">self</span>, 
-						<span class="yellow">family</span>, <span>and</span> 
-						<span class="yellow">community</span><span>.</span>                 
-						<span>&nbsp;&nbsp;
-							<a href="#" class="ui big green button contact-form">
-								Try For Free<i class="right arrow icon"></i>
-							</a>
-						</span>                 
-					</h2>
-				</div><%# End Slogan Block %>
-			</div><%# End Carousel LogoHead %>
-		</div><%# End Carousel Wrapper %>
-
-		<%# Contact Modal %>
-		<div class="ui modal">
-			<i class="close icon"></i>
-			<div class="header">
-			Profile Picture
-			</div>
-			<div class="ui segments">
-				<div class="ui segment">
-					<form class="ui form">
-					  <div class="field">
-						<label>First Name</label>
-						<input type="text" name="first-name" placeholder="First Name">
-					  </div>
-					  <div class="field">
-						<label>Last Name</label>
-						<input type="text" name="last-name" placeholder="Last Name">
-					  </div>
-  <div class="inline fields">
-    <label>Phone Number</label>
-    <div class="field">
-      <input type="text" placeholder="(xxx)">
-    </div>
-    <div class="field">
-      <input type="text" placeholder="xxx">
-    </div>
-    <div class="field">
-      <input type="text" placeholder="xxxx">
-    </div>
-  </div>						
-					  <div class="field">
-						<div class="ui checkbox">
-						  <input type="checkbox" tabindex="0" class="hidden">
-						  <label>I agree to the Terms and Conditions</label>
-						</div>
-					  </div>
-					  <button class="ui button" type="submit">Submit</button>
-					</form>	
-				</div>
-				<div class="ui segment">
-					<p>Bottom</p>
-				</div>
-			</div>
-		</div><%# End Contact Modal %>
-
+	  
+		<!-- Contact Modal -->
+		<% include contact-modal %>
 		<!--
 		<%# Default Bootstrap Navigation %>
 
@@ -219,4 +124,4 @@
 			</div>
 			<% } %>			
 		</div>
-		
+			
