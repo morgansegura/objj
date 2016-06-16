@@ -55,7 +55,8 @@ a:active {
 
 p, h4, h5, h6 {
     font-weight: 500;
-	color: #fff;
+	color: #fff8db;
+    text-shadow: 1px 1px 1px #000;
 }
 
 h2, h3, .nav-association, .phone-number, button.orange {
@@ -194,7 +195,7 @@ span.yellow {
 }
 
 .background-light {
-	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
+
 }
 .button.contact-form {
 	width: 100%;
@@ -242,7 +243,7 @@ span.yellow {
 	max-width: 300px;
 	float: right;
 	padding: 30px;
-
+	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
 }
 
 .footer {
@@ -562,38 +563,94 @@ img.secondary {
 	display: none;
 }
 
-
-@media only screen and (max-width: 700px) {
-
-	.show-mobile {
-		display: block !important;
-	}
-	.hide-mobile {
-		display: none !important;
-	}
-	.full {
-		display: block !important;
-	}
-	.ui.fixed.menu {
+  /*  Responsive Styles */
+	@media only screen and (max-width: 1024px) {	
 
 	}
-	.secondary.pointing.menu .item,
-	.secondary.pointing.menu .menu {
-		display: none;
-	}
-	.secondary.pointing.menu .toc.item {
-		display: block;
-	}
-	.masthead.segment {
-		min-height: 350px;
-	}
-	.masthead h1.ui.header {
-		font-size: 2em;
-		margin-top: 1.5em;
-	}
-	.masthead h2 {
-		margin-top: 0.5em;
-		font-size: 1.5em;
-	}
-}
+    @media only screen and (max-width: 964px) {
+
+    }
+
+    @media only screen and (max-width: 768px) {
+        body {
+            font-weight: normal;
+        }
+        .ui.container {
+            width: 100%;
+        }
+        .main-content, .content-sidebar {
+            padding: 20px;
+            float: none;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .show-mobile {
+            display: block !important;
+        }
+        .hide-mobile {
+            display: none !important;
+        }
+        .full {
+            display: block !important;
+        }
+        .ui.fixed.menu {
+
+        }
+        .secondary.pointing.menu .item,
+        .secondary.pointing.menu .menu {
+            display: none;
+        }
+        .secondary.pointing.menu .toc.item {
+            display: block;
+        }
+        .masthead.segment {
+            min-height: 350px;
+        }
+        .masthead h1.ui.header {
+            font-size: 2em;
+            margin-top: 1.5em;
+        }
+        .masthead h2 {
+            margin-top: 0.5em;
+            font-size: 1.5em;
+        }
+        .ui.menu .item>i.icon {
+            margin: 0;
+            text-align: right;
+        }
+
+        .ui.inverted.menu .item.logo {
+            margin: 0 auto;
+            width: 100%;
+            left: auto;
+            right: auto;
+        }   
+        .top-padding {
+            margin-top: 57px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        .slogan-block h2 {
+            text-align: center;
+            padding: 5px 0;
+            font-weight: normal;
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+
+    }
+
+    @media only screen and (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+
+        .slogan-block {
+            
+        }
+    }
+
 
