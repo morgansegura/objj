@@ -235,7 +235,7 @@ span.yellow {
 	max-width: 900px;
 	padding: 30px;
 	float: left;
-		background: url('/images/bg-body.jpg') 0 0 repeat;
+	background: url('/images/bg-body.jpg') 0 0 repeat;
 }
 
 .content-sidebar {
@@ -292,7 +292,7 @@ span.yellow {
 
 .images-block img {
 	background: url('/images/bg-tan.jpg') 0 0 repeat;
-	padding: 10px
+	padding: 5px
 }
 
 .inline-image.left {
@@ -446,7 +446,7 @@ span.yellow {
     width: 100%;
 	text-align: right;
     padding: 5px 0;
-	background: #111;
+	background: #333;
 }
 .main.masthead.segment {
     min-height: auto;
@@ -615,7 +615,8 @@ img.secondary {
             font-size: 1.5em;
         }
         .ui.menu .item>i.icon {
-            margin: 0;
+            top: 5px;
+    		position: relative;
             text-align: right;
         }
 
@@ -636,7 +637,18 @@ img.secondary {
             padding: 5px 0;
             font-weight: normal;
         }
-
+        .pusher {
+        	margin-top: -35px;
+        }
+        .slogan-block h2 {
+			font-size: 24px;
+			line-height: 24px;        	
+        }
+        .content-sidebar h4 {
+        	font-size: 24px;
+        	margin: 10px auto;
+        	text-align: center;
+        }        
     }
 
     @media only screen and (max-width: 600px) {
@@ -648,9 +660,6 @@ img.secondary {
             font-size: 14px;
         }
 
-        .slogan-block {
-            
-        }
     }
 
 

@@ -25,30 +25,42 @@ $(document).ready(function(){
 	  autoplay: true,
 	  autoplaySpeed: 5000,          
 	  speed: 500,
+	  arrows: true,
 	  nextArrow: '<div class="arrow right transition"><i class="chevron right icon"></i></div>',
 	  prevArrow: '<div class="arrow left transition"><i class="chevron left icon"></i></div>',
 		responsive: [
 		{
 		  breakpoint: 768,
 		  settings: {
-			arrows: false,
+			arrows: true,
 			centerMode: true,
 			centerPadding: '40px',
 			  slidesToShow: 2,
 			  slidesToScroll: 2,
-			  autoplay: true,
+			  autoplay: true
 		  }
 		},
 		{
-		  breakpoint: 480,
+		  breakpoint: 481,
 		  settings: {
-			arrows: false,
-			centerMode: true,
-			centerPadding: '40px',
-			slidesToShow: 1
+			arrows: true,
+			centerMode: false,
+			centerPadding: '0',
+			slidesToShow: 1,
+	  		slidesToScroll: 1,		
 		  }
-		}
-		]
+		},
+		{
+		  breakpoint: 321,
+		  settings: {
+			arrows: true,
+			centerMode: false,
+			centerPadding: '0',
+			slidesToShow: 2,
+	  		slidesToScroll: 2,		
+		  }
+		}		
+	]
 });
 	
 	// *==* FancyBox Setup for Slick Carousel *==*	
