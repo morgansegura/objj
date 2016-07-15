@@ -86,4 +86,8 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		$('.wrapper-right').height(totalHeight);
 	});
+
+	$('.ui.inverted.modal').modal('show');
+
+
 });	
