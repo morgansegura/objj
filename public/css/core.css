@@ -4,7 +4,7 @@
 
 body {
 	background: url('/images/bg-body.jpg') 0 0 repeat;
-    font-family: 'PT Sans Caption', roboto, Myriad, Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.7em;
 	position: relative;
@@ -165,8 +165,8 @@ body.pushable>.pusher{
 	
 }
 .logo-text-large {
-	font-size: 24px;
-	font-family: 'Arial Black', serif;
+	font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	letter-spacing: -.04em;
 	text-transform: uppercase;
@@ -648,7 +648,10 @@ img.secondary {
         	font-size: 24px;
         	margin: 10px auto;
         	text-align: center;
-        }        
+        }
+        .ui.vertical.menu .item>i.icon {
+            top:0;
+        }
     }
 
     @media only screen and (max-width: 600px) {
