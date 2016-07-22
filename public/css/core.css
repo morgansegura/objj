@@ -375,6 +375,7 @@ span.yellow {
     position: absolute;
     padding: 10px 10px 10px 10px;
     top: 40%;
+    z-index: 1;
 }
 .slick .arrow:hover {
     background: #fff;
@@ -655,6 +656,11 @@ img.secondary {
     }
 
     @media only screen and (max-width: 600px) {
+        .outliers-star, .ribeiro-star {
+            background-size: 25px;
+            text-indent: 35px;
+            font-weight: 500;
+        }
 
     }
 
