@@ -3,11 +3,14 @@
  ======*/
 
 body {
-	background: url('/images/bg-body.jpg') 0 0 repeat;
-    font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	/*background: url('/images/bg-body.jpg') 0 0 repeat;*/
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+	/*font-size: 16px;*/
+    font-size: 15px;
 	line-height: 1.7em;
 	position: relative;
+    font-weight: normal;
 }
 
 
@@ -55,8 +58,11 @@ a:active {
 
 p, h4, h5, h6 {
     font-weight: 500;
+    /*
 	color: #fff8db;
     text-shadow: 1px 1px 1px #000;
+    */
+    color: #4d4d4d;
 }
 
 h2, h3, .nav-association, .phone-number, button.orange {
@@ -68,23 +74,24 @@ p, h1, h2, h3, h4, h5, h6, a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Sans Caption', roboto, Myriad, Helvetica, Arial, sans-serif;	
+    font-family: 'Montserrat', sans-serif;
 }
-
 .outliers-star {
     text-indent: 45px;
     background: transparent url('/images/brand/objj-icon-plain.svg') 0 -2px no-repeat;
 }
-
 .ribeiro-star {
     text-indent: 45px;
-    background: transparent url('/images/brand/ribeiro-star-yellow.svg') 0 -1px no-repeat;
+    background: transparent url('/images/brand/ribeiro-star-dark.svg') 0 -1px no-repeat;
 }
-
+.ribeiro-star,
+.outliers-star {
+    background-size: 35px;
+}
 h1, h2, h3 {
 	text-transform: uppercase;
 	font-weight: 800;
-	font-size: 1.375em;
+	font-size: 21px;
 }
 h1, h2, h3, .slogan-text, .nav-association p, nav li, .secondary-nav a, .phone-number {
 
@@ -115,7 +122,7 @@ li {
 }
 
 .yellow-text {
-	color: #f3da00;
+	color: #333;
 }
 
 .orange-text {
@@ -123,7 +130,7 @@ li {
 }
 
 .whitish-text {
-	color: #fff;
+	color: #777;
 }
 ui.segment {
 	background: transparent;
@@ -133,8 +140,11 @@ ui.segment {
     margin-bottom: 20px;
     height: 0px;
     display: block;
+    /*
    background: transparent url('/images/bg-spacer-line.png') center top repeat-x;
-    border: 1px dashed #444;	
+    border: 1px dashed #444;
+    */
+    background: #ddd;
 }
 
 .hidden {
@@ -187,7 +197,7 @@ body.pushable>.pusher{
 	font-weight: bold;
 	text-align: right;
 	color: #333;
-	float: right;
+	float: right;.yellow
 	display: none;
 }
 span.yellow {
@@ -195,10 +205,10 @@ span.yellow {
 }
 
 .background-light {
-
+    background: #fff;
 }
 .button.contact-form {
-	width: 100%;
+
 }
 
 /*======
@@ -231,19 +241,23 @@ span.yellow {
 }
 
 .main-content {
-	width: 100%;
+	width: 70%;
 	max-width: 900px;
 	padding: 30px;
 	float: left;
-	background: url('/images/bg-body.jpg') 0 0 repeat;
+	/*background: url('/images/bg-body.jpg') 0 0 repeat;*/
 }
 
 .content-sidebar {
-	width: 100%;
+	width: 30%;
 	max-width: 300px;
 	float: right;
 	padding: 30px;
-	background: url('/images/bg-body-drk.jpg') 0 0 repeat;
+    margin-top: 30px;
+	/*background: url('/images/bg-body-drk.jpg') 0 0 repeat;*/
+    background: #e4e4e4;
+    -webkit-box-shadow: 0 0 5px 1px #999;
+    box-shadow: 0 0 5px 1px #999;
 }
 
 .footer {
@@ -409,14 +423,16 @@ span.yellow {
 	z-index: 998;
 }
 .header-backdrop {	
-	background: #5d5c5a url('/images/header-stripe.png') 0 0 repeat;
+	/*background: #5d5c5a url('/images/header-stripe.png') 0 0 repeat;*/
+	background: #e4e4e4 url('/images/header-stripe-gray.png') 0 0 repeat;
 	width: 30%;
 	float: left;
 	height: 56px;
 	display: block;
 }
 .header-backdrop-dark {
-	background: #333;
+	/*background: #333;*/
+    background: #1e2433;
 	width: 70%;
 	float: left;
 	height: 56px;
@@ -432,12 +448,13 @@ span.yellow {
 	background: transparent;
 }
 .ui.menu.yellow-bg {
-	background: #f2da0d;
+	background: #fff;
 	border-top: none;
 }
 .logo-container {
 	z-index: 999;
-	background: #333;
+	/*background: #333;*/
+    background: #1e2433;
 }
 .slogan-block {
     position: relative;
@@ -445,9 +462,13 @@ span.yellow {
     right: 0;
     display: block;
     width: 100%;
-	text-align: right;
-    padding: 5px 0;
-	background: #333;
+	text-align: center;
+    padding: 30px 0;
+	/*background: #333;*/
+    background: #e4e4e4;
+}
+.slogan-block h2 {
+    font-size: 26px;
 }
 .main.masthead.segment {
     min-height: auto;
@@ -501,7 +522,7 @@ img.secondary {
 
 .ui.inverted.segment, 
 .ui.primary.inverted.segment {
-
+    background: #1e2433;
 }
 .hidden.menu {
 	display: none;
@@ -637,16 +658,14 @@ img.secondary {
             text-align: center;
             padding: 5px 0;
             font-weight: normal;
+			font-size: 18px;
         }
         .pusher {
         	margin-top: -35px;
         }
-        .slogan-block h2 {
-			font-size: 24px;
-			line-height: 24px;        	
-        }
+
         .content-sidebar h4 {
-        	font-size: 24px;
+        	font-size: 21px;
         	margin: 10px auto;
         	text-align: center;
         }
