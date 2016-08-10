@@ -13,7 +13,6 @@ body {
     font-weight: normal;
 }
 
-
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -77,12 +76,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 .outliers-star {
-    text-indent: 45px;
-    background: transparent url('/images/brand/objj-icon-plain.svg') 0 -2px no-repeat;
+    text-indent: 40px;
+    background: transparent url('/images/brand/objj-icon-plain.svg') 0 1px no-repeat;
 }
 .ribeiro-star {
-    text-indent: 45px;
-    background: transparent url('/images/brand/ribeiro-star-dark.svg') 0 -1px no-repeat;
+    text-indent: 40px;
+    background: transparent url('/images/brand/ribeiro-star.svg') 0 -1px no-repeat;
 }
 .ribeiro-star,
 .outliers-star {
@@ -144,7 +143,7 @@ ui.segment {
    background: transparent url('/images/bg-spacer-line.png') center top repeat-x;
     border: 1px dashed #444;
     */
-    background: #ddd;
+    background: #efefef;
 }
 
 .hidden {
@@ -205,7 +204,20 @@ span.yellow {
 }
 
 .background-light {
-    background: #fff;
+	background: #efefef;
+	background: -moz-linear-gradient(top,  #efefef 0%, #ffffff 27%, #ffffff 80%);
+	background: -webkit-linear-gradient(top,  #efefef 0%,#ffffff 27%,#ffffff 80%);
+	background: linear-gradient(to bottom,  #efefef 0%,#ffffff 27%,#ffffff 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
+}
+.background-color {
+	background: #efe394;
+	background: -moz-linear-gradient(top,  #efe394 0%, #fefcea 34%);
+	background: -webkit-linear-gradient(top,  #efe394 0%,#fefcea 34%);
+	background: linear-gradient(to bottom,  #efe394 0%,#fefcea 34%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe394', endColorstr='#fefcea',GradientType=0 );
+
+	margin-bottom: -1rem;
 }
 .button.contact-form {
 
@@ -218,7 +230,7 @@ span.yellow {
 .wrapper {
 	width: 100%;
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
 }
 .wrapper-right {
 	width: 50%;
@@ -241,29 +253,28 @@ span.yellow {
 }
 
 .main-content {
-	width: 70%;
-	max-width: 900px;
+	width: 100%;
 	padding: 30px;
 	float: left;
 	/*background: url('/images/bg-body.jpg') 0 0 repeat;*/
 }
 
 .content-sidebar {
-	width: 30%;
-	max-width: 300px;
+	width: 100%;
 	float: right;
-	padding: 30px;
-    margin-top: 30px;
 	/*background: url('/images/bg-body-drk.jpg') 0 0 repeat;*/
-    background: #e4e4e4;
-    -webkit-box-shadow: 0 0 5px 1px #999;
-    box-shadow: 0 0 5px 1px #999;
 }
 
 .footer {
 	background: #333;
 	border-top: 2px solid #f2da0d;
 	padding-top: 20px 0;
+}
+.footer p {
+	color: rgba(255,255,255,.5);
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 13px;
 }
 
 /*=== FLOATED ICON BLOCK ===*/
@@ -305,8 +316,7 @@ span.yellow {
 } 
 
 .images-block img {
-	background: url('/images/bg-tan.jpg') 0 0 repeat;
-	padding: 5px
+
 }
 
 .inline-image.left {
@@ -424,7 +434,7 @@ span.yellow {
 }
 .header-backdrop {	
 	/*background: #5d5c5a url('/images/header-stripe.png') 0 0 repeat;*/
-	background: #e4e4e4 url('/images/header-stripe-gray.png') 0 0 repeat;
+	background: #f3da00;
 	width: 30%;
 	float: left;
 	height: 56px;
@@ -465,10 +475,13 @@ span.yellow {
 	text-align: center;
     padding: 30px 0;
 	/*background: #333;*/
-    background: #e4e4e4;
+    background: #fff;
+	border-bottom: 1px solid #ccc;
 }
 .slogan-block h2 {
     font-size: 26px;
+	padding-bottom: 10px;
+	line-height: 27px;
 }
 .main.masthead.segment {
     min-height: auto;
@@ -492,7 +505,7 @@ img.secondary {
     top: -3px;
 }
 .ui.inverted.menu .item.logo:hover {
-	background: #333;
+	background: #2f384e;
 }
 .offset {
 	background: #E0EAFC; /* fallback for old browsers */
@@ -500,7 +513,7 @@ img.secondary {
 	background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */            
 }
 .ui.grid {
-	margin-top: 15px;
+	margin-top: 0px;
 }
 .ui[class*="vertical rectangle"].ad {
 	max-width: 320px;
@@ -601,7 +614,6 @@ img.secondary {
             width: 100%;
         }
         .main-content, .content-sidebar {
-            padding: 20px;
             float: none;
             margin: 0 auto;
             max-width: 100%;
