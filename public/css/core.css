@@ -212,7 +212,7 @@ span.yellow {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
 }
 .background-color {
-	background: #efe394;
+	background: #D8E4EF;
 	margin-bottom: -1rem;
 }
 .button.contact-form {
@@ -429,16 +429,16 @@ span.yellow {
 	z-index: 998;
 }
 .header-backdrop {	
-	/*background: #5d5c5a url('/images/header-stripe.png') 0 0 repeat;*/
-	background: #f3da00;
+	background: #5d5c5a url('/images/header-stripe.png') 0 0 repeat;
+	/*background: #f3da00;*/
 	width: 30%;
 	float: left;
 	height: 56px;
 	display: block;
 }
 .header-backdrop-dark {
-	/*background: #333;*/
-    background: #1e2433;
+	background: #333;
+    /*background: #1e2433;*/
 	width: 70%;
 	float: left;
 	height: 56px;
@@ -459,8 +459,7 @@ span.yellow {
 }
 .logo-container {
 	z-index: 999;
-	/*background: #333;*/
-    background: #1e2433;
+	background: #333;
 }
 .slogan-block {
     position: relative;
@@ -531,7 +530,7 @@ img.secondary {
 
 .ui.inverted.segment, 
 .ui.primary.inverted.segment {
-    background: #1e2433;
+    background: #333;
 }
 .hidden.menu {
 	display: none;
