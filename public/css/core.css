@@ -180,6 +180,7 @@ body.pushable>.pusher{
 	letter-spacing: -.04em;
 	text-transform: uppercase;
 	margin-left: 5px;
+	margin-top: 3px;
 }
 .logo-text-large span {
 	font-size: 12px;
@@ -212,11 +213,6 @@ span.yellow {
 }
 .background-color {
 	background: #efe394;
-	background: -moz-linear-gradient(top,  #efe394 0%, #fefcea 34%);
-	background: -webkit-linear-gradient(top,  #efe394 0%,#fefcea 34%);
-	background: linear-gradient(to bottom,  #efe394 0%,#fefcea 34%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efe394', endColorstr='#fefcea',GradientType=0 );
-
 	margin-bottom: -1rem;
 }
 .button.contact-form {
