@@ -76,16 +76,16 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 .outliers-star {
-    text-indent: 40px;
-    background: transparent url('/images/brand/objj-icon-plain.svg') 0 1px no-repeat;
+    text-indent: 35px;
+    background: transparent url('/images/brand/objj-icon-plain.svg') 0 2px no-repeat;
 }
 .ribeiro-star {
-    text-indent: 40px;
-    background: transparent url('/images/brand/ribeiro-star.svg') 0 -1px no-repeat;
+    text-indent: 35px;
+    background: transparent url('/images/brand/ribeiro-star.svg') 0 1px no-repeat;
 }
 .ribeiro-star,
 .outliers-star {
-    background-size: 35px;
+    background-size: 30px;
 }
 h1, h2, h3 {
 	text-transform: uppercase;
@@ -129,7 +129,7 @@ li {
 }
 
 .whitish-text {
-	color: #777;
+	color: #6a6a6a;
 }
 ui.segment {
 	background: transparent;
@@ -204,17 +204,35 @@ span.yellow {
     color: #f2da0d;
 }
 
-.background-light {
-	background: #efefef;
-	background: -moz-linear-gradient(top,  #efefef 0%, #ffffff 27%, #ffffff 80%);
-	background: -webkit-linear-gradient(top,  #efefef 0%,#ffffff 27%,#ffffff 80%);
-	background: linear-gradient(to bottom,  #efefef 0%,#ffffff 27%,#ffffff 80%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 );
+.background-full {
+
+    background: #b2b2b2;
+    background: -moz-radial-gradient(center, ellipse cover,  #b2b2b2 0%, #969696 39%, #878787 76%, #7a7a7a 100%);
+    background: -webkit-radial-gradient(center, ellipse cover,  #b2b2b2 0%,#969696 39%,#878787 76%,#7a7a7a 100%);
+    background: radial-gradient(ellipse at center,  #b2b2b2 0%,#969696 39%,#878787 76%,#7a7a7a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b2b2', endColorstr='#7a7a7a',GradientType=1 );
+
 }
+.background-light {
+    /*
+    background: #ffffff;
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #ffffff 38%, #e1e6e6 75%, #ced4d6 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#ffffff 38%,#e1e6e6 75%,#ced4d6 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%,#ffffff 38%,#e1e6e6 75%,#ced4d6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ced4d6',GradientType=1 );
+    */
+    background: #f5f5f5;
+}
+
+.upper-top {
+    margin-top: -16px;
+}
+
 .background-color {
-	background: #D8E4EF;
+	background: #fff;
 	margin-bottom: -1rem;
 }
+
 .button.contact-form {
 
 }
@@ -454,7 +472,7 @@ span.yellow {
 	background: transparent;
 }
 .ui.menu.yellow-bg {
-	background: #fff;
+    background: #fbbd08;
 	border-top: none;
 }
 .logo-container {
