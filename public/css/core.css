@@ -11,6 +11,7 @@ body {
 	line-height: 1.7em;
 	position: relative;
     font-weight: normal;
+    padding: 0;
 }
 
 html {
@@ -290,7 +291,11 @@ span.yellow {
 	font-weight: normal;
 	font-size: 13px;
 }
-
+.footer-logo {
+    max-width: 155px;
+    margin: 0 auto;
+    display: block;
+}
 /*=== FLOATED ICON BLOCK ===*/
 
 .icon-block {
@@ -478,6 +483,7 @@ span.yellow {
 .logo-container {
 	z-index: 999;
 	background: #333;
+    position: relative;
 }
 .slogan-block {
     position: relative;
@@ -606,13 +612,16 @@ img.secondary {
 .footer.segment {
 	padding: 5em 0em;
 }
-
-.secondary.pointing.menu .toc.item {
-	display: none;
+.ui.inverted.menu .item.logo {
+    margin: 0 auto;
+    width: auto;
+    left: auto;
+    right: auto;
+    position: relative;
 }
 
   /*  Responsive Styles */
-	@media only screen and (max-width: 1024px) {	
+	@media only screen and (max-width: 1024px) {
 
 	}
     @media only screen and (max-width: 964px) {
@@ -620,6 +629,17 @@ img.secondary {
     }
 
     @media only screen and (max-width: 768px) {
+        .ui.menu .item.hamburger {
+            position: fixed;
+            height: 56px;
+        }
+        .show-mobile.ui.inverted.menu {
+            padding-top: 56px;
+        }
+        .secondary.pointing.menu .toc.item {
+            display: none;
+        }
+
         body {
             font-weight: normal;
         }
@@ -667,12 +687,6 @@ img.secondary {
             text-align: right;
         }
 
-        .ui.inverted.menu .item.logo {
-            margin: 0 auto;
-            width: 100%;
-            left: auto;
-            right: auto;
-        }   
         .top-padding {
             margin-top: 57px;
         }
@@ -711,6 +725,9 @@ img.secondary {
     @media only screen and (max-width: 480px) {
         body {
             font-size: 14px;
+        }
+        .main-content {
+            padding: 15px
         }
 
     }

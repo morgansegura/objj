@@ -47,7 +47,6 @@
 	<%# Header %>
 	<div class="show-mobile ui sidebar inverted vertical menu">
 		<a class="clearfix closed ui item hamburger">
-			<i class="large remove icon"></i>
 		</a>		  
 		<a class="item" href="/">Home</a>
 		<a class="item" href="/classes">Classes</a>
@@ -56,43 +55,45 @@
 		<a class="item contact-form" href="#">Contact Us</a>          
 		<a class="item" href="/waiver">Waiver</a> 
 	</div>
-	  <%# Pusher Content %>
+
+    <header id="header">
+        <%# Inverted menu %>
+        <div class="clearfix ui fixed inverted menu logo-nav">
+            <div class="ui container logo-container">
+                <%# Branding Section %>
+                <a class="show-mobile view-ui item hamburger">
+                    <i class="large sidebar icon"></i>
+                </a>
+                <img class="hide-mobile ui left image" style="left: -50px;" src="/images/img-header-fixture.png">
+                <a class="item logo clearfix" href="/">
+                    <img class="logo" src="/images/objj-icon-new.svg">
+                    <div class="logo-text-large"> Outliers <span>&reg;</span></div>
+                </a>
+            </div>
+
+            <div class="hide-mobile header-background clearfix">
+                <div class="header-backdrop"></div>
+                <div class="header-backdrop-dark"></div>
+            </div>
+
+        </div>
+        <div class="hide-mobile ui fixed menu yellow-bg" style="top: 50px;">
+            <%# Main Navigation %>
+            <nav class="ui container">
+                <%# Navigation Menu %>
+                <a class="item" href="/">Home</a>
+                <a class="item" href="/classes">Classes</a>
+                <a class="item" href="/instructors">Instructors</a>
+                <a class="item" href="/about">About Us</a>
+                <a class="item contact-form" href="#">Contact Us</a>
+                <a class="item" href="/waiver">Waiver</a>
+            </nav><%# End Main Nav %>
+        </div><%# End Menu %>
+    </header><%# End Header %>
+
+    <%# Pusher Content %>
 	  <div class="pusher">	
-		<header id="header">		
-			<%# Inverted menu %>			
-			<div class="clearfix ui fixed inverted menu logo-nav">
-				<div class="ui container logo-container">
-					<%# Branding Section %>	
-					<a class="show-mobile view-ui item hamburger">
-						<i class="large sidebar icon"></i>
-					</a>					
-					<img class="hide-mobile ui left image" style="left: -50px;" src="/images/img-header-fixture.png">
-					<a class="item logo clearfix" href="/">	
-						<img class="logo" src="/images/objj-icon-new.svg">
-						<div class="logo-text-large"> Outliers <span>&reg;</span></div>
-					</a>
-				</div>
 
-				<div class="hide-mobile header-background clearfix">
-					<div class="header-backdrop"></div>
-					<div class="header-backdrop-dark"></div>
-				</div>
-
-			</div>
-			<div class="hide-mobile ui fixed menu yellow-bg" style="top: 50px;">
-				<%# Main Navigation %>	
-				<nav class="ui container">
-					<%# Navigation Menu %>
-					<a class="item" href="/">Home</a>
-					<a class="item" href="/classes">Classes</a>
-					<a class="item" href="/instructors">Instructors</a>
-					<a class="item" href="/about">About Us</a>          
-					<a class="item contact-form" href="#">Contact Us</a>          
-					<a class="item" href="/waiver">Waiver</a>   						
-				</nav><%# End Main Nav %>	
-			</div><%# End Menu %>
-		</header><%# End Header %>	
-	  
 		<!-- Contact Modal -->
 		<% include contact-modal %>
 		<!--

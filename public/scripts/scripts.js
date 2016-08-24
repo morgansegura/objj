@@ -9,12 +9,12 @@ $(document).ready(function(){
 	$('.contact-form').on('click', function(){
 	   $('.ui.modal').modal('show');  
 	});
-	
+
 	// *==* Sidebar Nav *==*
 	$('.hamburger').on('click', function(){
 		$('.ui.sidebar').sidebar('toggle');
 	});
-	
+
 	// *==* Slick Carousel *==*	
   $('.slick').slick({
 
@@ -72,10 +72,6 @@ $(document).ready(function(){
 		'overlayShow'	:	false
 	});	
 
-	$('.ui.sticky')
-	  .sticky({
-		context: '#header'
-	  });	
 
 	// *==* Wrapper Height *==*	
 	//var  headerHeight = $('.wrapper').outerHeight(true)
@@ -90,4 +86,4 @@ $(document).ready(function(){
 	$('.ui.inverted.modal').modal('show');
 
 
-});	
+});
